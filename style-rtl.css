@@ -3,7 +3,7 @@
 	Description: Custom child theme created especially for Deborah by Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.1.2
+	Version: 1.1.2 CUSTOM YDESF
 
 	Template: genesis
 
@@ -1264,7 +1264,7 @@ div#tribe-events-pg-template,
 #tribe-events-pg-template .tribe-events-button.tribe-inactive,
 #tribe-events-pg-template .entry-content .tribe-events-button:hover,
 #tribe-events-pg-template .tribe-events-button:hover,
-#tribe-events-pg-template .tribe-events-button.tribe-active:hover 
+#tribe-events-pg-template .tribe-events-button.tribe-active:hover
 {
 	background-color: #bf1f24;
 	color: #FFF;
@@ -2747,7 +2747,7 @@ div.soliloquy-container .soliloquy-caption h2 {
 	list-style-type: decimal;
 	margin-left: 10px;
 	margin-left: 1rem;
-	
+
 }
 
 .entry-content ul li {
@@ -3274,7 +3274,7 @@ Site Footer
 	padding: 1.6rem;
 	text-align: center;
 	display: inline-block;
-	width: 100%; 
+	width: 100%;
 	line-height: 1;
 	}
 #text_icl-31, #text_icl-25 {
@@ -3283,7 +3283,7 @@ Site Footer
 	padding: 1.6rem;
 	text-align: center;
 	display: inline-block;
-	width: 100%; 
+	width: 100%;
 	line-height: 1;
 }
 #text_icl-30 a, #text_icl-31 a, #text_icl-24 a, #text_icl-25 a, #text_icl-28 a, #text_icl-32 a, #text_icl-35 a  {
@@ -3389,7 +3389,7 @@ Site Footer
 	overflow: hidden;
 	float: right;
 }
-	
+
 
 
 .fa-phone, .fa-envelope,.fa-fax, .fa-arrow-circle-down, .fa-map-marker{
@@ -3397,7 +3397,7 @@ Site Footer
 	vertical-align: middle;
 	padding-right: 5px;
 	color: #666;
-} 
+}
 #wsm-cta-widget-8 a{
 	color: #1386b0;
 	font-size:18px;
@@ -3432,7 +3432,7 @@ Site Footer
   text-transform: none;
   }
 .nav-secondary .genesis-nav-menu .menu-item .lang-en > a {
-	border-right: 0px solid #9FD9EF;	
+	border-right: 0px solid #9FD9EF;
 }
 #nav_menu-10 .widget-title span {
 	background-color: #fff;
@@ -3449,9 +3449,9 @@ Site Footer
   position: relative;
   text-align: center;
   text-transform: none;
- } 
+ }
 .nav-secondary .genesis-nav-menu .menu-item .lang-en > a {
-	border-right: 0px solid #9FD9EF;	
+	border-right: 0px solid #9FD9EF;
 }
 #nav_menu-11 .widget-title span {
 	background-color: #fff;
@@ -3468,7 +3468,7 @@ Site Footer
 	color: #faa61a;
 	font-weight: bold;
 }
- 
+
 ul.sub-menu li.menu-item-has-children > a:after {
 	content: "\f105";
 	font-family: 'FontAwesome';
@@ -3620,7 +3620,7 @@ input:focus:-ms-input-placeholder {
   color: #4A4B4C;
 }
 .site-lang-en .site-header .wrap { background: url('http://www.ydesfemmesmtl.org/wp-content/uploads/2016/08/banner-y-en2.png') repeat-x 0 bottom #fff; } // For English language
- 
+
 .site-lang-fr .site-header .wrap { background: url('http://www.ydesfemmesmtl.org/wp-content/uploads/2016/08/banner-y13.png') repeat-x 0 bottom #fff; } // For French
 
 #nav_menu-13 .widget-title {
@@ -4070,7 +4070,7 @@ text-transform: none;
 }
 /* Content Boxes
 ------------------------------------------------------------ */
- 
+
 .content-box-blue,
 .content-box-gray,
 .content-box-green,
@@ -4081,28 +4081,28 @@ text-transform: none;
     overflow: hidden;
     padding: 20px;
 }
- 
+
 .content-box-blue {
     background-color: #FAA61A;
     border: 1px solid #FAA61A;
 	color:#ffffff;
 	font-size: 16px;
 }
- 
+
 .content-box-gray {
     background-color: none;
    	border: 1px solid rgb(190, 31, 36);
 	color: rgb(190, 31, 36);
 	font-size: 18px;
 }
- 
+
 .content-box-green {
     background-color: none;
     border: 1px solid #FAA61A;
 	color:#FAA61A;
 	font-family: "Montserrat",sans-serif;
 }
- 
+
 .content-box-purple {
     background-color: rgb(190, 31, 36);
     border: 1px solid #rgb(190, 31, 36);
@@ -4110,12 +4110,12 @@ text-transform: none;
 	font-family: "Montserrat",sans-serif;
 	border-radius: 9px;
 }
- 
+
 .content-box-red {
     background-color: #f9dbdb;
     border: 1px solid #e9b3b3;
 }
- 
+
 .content-box-yellow {
     background-color: #fef5c4;
     border: 1px solid #fadf98;
@@ -4330,7 +4330,7 @@ padding: 5px 5px 5px 10px;
 .page-id-63 .printfriendly a span,.page-id-55 .printfriendly a span,.page-id-130 .printfriendly a span,.page-id-3633 .printfriendly a span,.page-id-16571 .printfriendly a span,.page-id-16573 .printfriendly a span,.page-id-3932 .printfriendly a span,.page-id-1522 .printfriendly a span,.page-id-1524 .printfriendly a span,.page-id-1527 .printfriendly a span
 {
     display: none;
-	
+
 }
 .page-id-63 div.sharedaddy,.page-id-55 div.sharedaddy,.page-id-130 div.sharedaddy,.page-id-3633 div.sharedaddy,.page-id-16571 div.sharedaddy,.page-id-16573 div.sharedaddy,.page-id-3932 div.sharedaddy,.page-id-1522 div.sharedaddy,.page-id-1524 div.sharedaddy,.page-id-1527 div.sharedaddy {
 display: none;
@@ -4449,8 +4449,8 @@ Media Queries
 	}
 	.site-header {
   		background: url() repeat-x 0 bottom #fff;
-		
-	}	
+
+	}
 
 }
 
@@ -4489,7 +4489,7 @@ Media Queries
     color: #ffffff;
     float: right;
 }
-	
+
 }
 @media only screen and (max-width: 780px) {
 
@@ -4527,7 +4527,7 @@ Media Queries
 	}
 	.site-header {
   		background: url() repeat-x 0 bottom #fff;
-		
+
 	}
 
 	.header-image .site-header .wrap,
@@ -4873,12 +4873,12 @@ Media Queries
 	}
 	.site-header .wrap {
   		background: none !important;
-		
+
 	}
 		.site-lang-en .site-header .wrap {
    		 background: none !important;
 }
-	
+
 
 }
 
@@ -4915,7 +4915,7 @@ Media Queries
 	.site-lang-en .site-header .wrap {
     background: none !important;
 }
-	
+
 
 }
 
@@ -4954,7 +4954,7 @@ Media Queries
 	}
 	.site-header .wrap {
   		background: none !important;
-		
+
 	}
 	.site-lang-en .site-header .wrap {
     background: none !important;
