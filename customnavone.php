@@ -1,0 +1,1 @@
+<?php echo '<div id="nav"><div class="wrap">';  wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_id' => 'customnavone' , 'menu_class' => 'menu customnavone superfish sf-js-enabled', 'theme_location' => 'customnavone') ); echo '</div></div>'; ?>

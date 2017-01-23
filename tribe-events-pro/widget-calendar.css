@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tribe-mini-calendar .tribe-events-has-events:hover a:hover {
+    background: #BF1F24 none repeat scroll 0% 0%;
+	}
