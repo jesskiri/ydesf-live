@@ -1,5 +1,7 @@
 <?php
-
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
 add_action( 'after_setup_theme', 'deborah_i18n' );
 /**
  * Load the child theme textdomain for internationalization.
@@ -54,13 +56,16 @@ function deborah_load_modernizr() {
 }
 
 // Add new image sizes
-add_image_size( 'Blog Thumbnail', 286, 188, TRUE );
+add_image_size( 'vedette', 335, 220, TRUE );
+add_image_size( 'Blog Thumbnail', 320, 200, TRUE );
+add_image_size( 'News Thumbnail', 150, 112, TRUE );
+add_image_size( 'Page Thumbnail', 210, 270, TRUE );
 
 // Customize the Search Box
-add_filter( 'genesis_search_button_text', 'custom_search_button_text' );
+/*add_filter( 'genesis_search_button_text', 'custom_search_button_text' );
 function custom_search_button_text( $text ) {
     return esc_attr( 'Go', 'deborah' );
-}
+}*/
 
 // Modify the author box display
 add_filter( 'genesis_author_box', 'deborah_author_box' );
@@ -113,7 +118,7 @@ add_filter( 'excerpt_more', 'deborah_add_excerpt_more' );
 add_filter( 'get_the_content_more_link', 'deborah_add_excerpt_more' );
 add_filter( 'the_content_more_link', 'deborah_add_excerpt_more' );
 function deborah_add_excerpt_more( $more ) {
-    return ' <span class="more-link"><a href="' . get_permalink() . '" rel="nofollow">' . __( 'Read More >>', 'deborah' ) . '</a></span>';
+    return ' <span class="more-link"><a href="' . get_permalink() . '" rel="nofollow">' . __( 'En savoir plus >>', 'deborah' ) . '</a></span>';
 }
 
 /*
@@ -131,6 +136,7 @@ add_theme_support( 'genesis-structural-wraps',
 	array(
 		'header',
 		'nav',
+		'subnav',
 		'site-inner',
 		'footer-widgets',
 		'footer',
@@ -142,15 +148,25 @@ add_theme_support( 'genesis-structural-wraps',
 
 add_theme_support ( 'genesis-menus' ,
 	array (
-		'primary' => __( 'Primary Navigation Menu', 'deborah' ),
-		'secondary' => __( 'Secondary Navigation Menu', 'deborah' ),
-		'footer' => __( 'Footer Navigation Menu', 'deborah' ),
+		'primary' => 'Primary Navigation Menu' ,
+		'secondary' => 'Secondary Navigation Menu' ,
+		'customnavone' => 'Third Navigation Menu',
+		'footer' => 'Footer Navigation Menu',
 	)
 );
 
 // Reposition the secondary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_header_right', 'genesis_do_subnav' );
+add_action( 'genesis_before_header', 'genesis_do_subnav' );
+
+// Default Menus: registers menus
+add_theme_support ( 'genesis-menus' , array ( 'primary' => 'Primary Navigation Menu' , 'secondary' => 'Secondary Navigation Menu' ,'customnavone' => 'Third Navigation Menu','footer' => 'Footer Navigation Menu' ) );
+
+// Add new navbar
+add_action('genesis_after_header', 'customnavone');
+function customnavone() {
+require(CHILD_DIR.'/customnavone.php');
+}
 
 // Unregister Layouts
 genesis_unregister_layout( 'content-sidebar-sidebar' );
@@ -162,7 +178,7 @@ add_theme_support( 'genesis-footer-widgets', 4 );
 
 // Setup Sidebars
 unregister_sidebar( 'sidebar-alt' );
-unregister_sidebar( 'header-right' );
+/*unregister_sidebar( 'header-right' );*/
 
 genesis_register_sidebar( array(
 	'id'			=> 'rotator',
@@ -220,7 +236,6 @@ genesis_register_sidebar( array(
 	'description'	=> __( 'This is the bottom sponsors logo', 'deborah' ),
 ) );
 
-
 // Remove edit link from TablePress tables for logged in users
 add_filter( 'tablepress_edit_link_below_table', '__return_false' );
 
@@ -242,6 +257,22 @@ add_action( 'genesis_after_content_sidebar_wrap', 'deborah_bottom_sponsors' );
 function deborah_bottom_sponsors() {
 	genesis_widget_area( 'bottom-sponsors', array( 'before' => '<aside class="bottom-sponsors widget-area">', 'after' => '</aside>' ) );
 }
+function new_nav_menu_items($items,$args) {
+if ($args->theme_location == 'secondary') {
+if (function_exists('icl_get_languages')) {
+$languages = icl_get_languages('skip_missing=0');
+if(1 < count($languages)){
+foreach($languages as $l){
+if(!$l['active']){
+$items = $items.'<li class="menu-item lang-'.$l['language_code'].'"><a href="'.$l['url'].'"/>'.$l['native_name'].'</a></li>';
+}
+}
+}
+}
+}
+return $items;
+}
+add_filter('wp_nav_menu_items', 'new_nav_menu_items',10,2 );
 
 
 // ------------------ Woocommerce ------------------------ //
@@ -314,4 +345,100 @@ function wsm_breadcrumb_args( $args ) {
 	$args['prefix'] = '<div class="breadcrumb"><div class="breadcrumb-inner">';
 	$args['suffix'] = '</div></div>';
 return $args;
+}
+add_action( 'genesis_entry_content', 'sk_show_featured_image_single_posts', 9 );
+function sk_show_featured_image_single_posts() {
+	if ( ! is_singular( 'post' ) ) {
+		return;
+	}
+ 
+	$image_args = array(
+		'size' => 'Blog Thumbnail',
+		'attr' => array(
+			'class' => 'alignleft',
+		),
+	);
+ 
+	genesis_image( $image_args );
+}
+add_filter( 'get_the_content_more_link', 'sp_read_more_link' );
+function sp_read_more_link() {
+return '... <a class="more-link" "></a>';
+}
+//* Enqueue scripts and styles
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_scripts_styles' );
+function custom_enqueue_scripts_styles() {
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
+	
+	wp_enqueue_script( 'global', get_bloginfo( 'stylesheet_directory' ) . '/js/global.js', array( 'jquery' ), '1.0.0', true );
+
+}
+
+add_filter( 'wp_nav_menu_items', 'theme_menu_extras', 10, 2 );
+/**
+ * Filter menu items to append a search form.
+ *
+ * @param string   $menu HTML string of list items.
+ * @param stdClass $args Menu arguments.
+ *
+ * @return string Amended HTML string of list items.
+ */
+function theme_menu_extras( $menu, $args ) {
+
+	if ( 'secondary' !== $args->theme_location )
+		return $menu;
+
+	$menu .= '<li class="search"><a id="main-nav-search-link" class="icon-search"></a><div class="search-div">' . get_search_form( false ) . '</div></li>';
+	
+	return $menu;
+
+}
+
+//* Customize search form input button text
+add_filter( 'genesis_search_button_text', 'sp_search_button_text' );
+function sp_search_button_text( $text ) {
+	return esc_attr( 'Go' );
+}
+
+/* allow upload flash */
+add_filter('upload_mimes', 'pixert_upload_swf');
+function pixert_upload_swf($existing_mimes){
+$existing_mimes['swf'] = 'text/swf'; //allow swf files
+return $existing_mimes;
+}
+/* allow upload flash */
+function curr_lang_body_classes($classes) {
+ 
+        if( defined('ICL_LANGUAGE_CODE') ){
+            $classes[] = 'site-lang-'.ICL_LANGUAGE_CODE;
+        }
+        return $classes;
+}
+add_filter('body_class', 'curr_lang_body_classes');
+
+/**
+ * Allows visitors to page forward/backwards in any direction within month view
+ * an "infinite" number of times (ie, outwith the populated range of months).
+ */
+if ( class_exists( 'Tribe__Events__Main' ) ) {
+	class ContinualMonthViewPagination {
+	    public function __construct() {
+	        add_filter( 'tribe_events_the_next_month_link', array( $this, 'next_month' ) );
+	        add_filter( 'tribe_events_the_previous_month_link', array( $this, 'previous_month' ) );
+	    }
+	    public function next_month() {
+	        $url = tribe_get_next_month_link();
+	        $text = tribe_get_next_month_text();
+	        $date = Tribe__Events__Main::instance()->nextMonth( tribe_get_month_view_date() );
+	        return '<a data-month="' . $date . '" href="' . $url . '" rel="next">' . $text . ' <span>&raquo;</span></a>';
+	    }
+	    public function previous_month() {
+	        $url = tribe_get_previous_month_link();
+	        $text = tribe_get_previous_month_text();
+	        $date = Tribe__Events__Main::instance()->previousMonth( tribe_get_month_view_date() );
+	        return '<a data-month="' . $date . '" href="' . $url . '" rel="prev"><span>&laquo;</span> ' . $text . ' </a>';
+	    }
+	}
+	new ContinualMonthViewPagination;
 }
