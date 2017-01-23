@@ -1,0 +1,842 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Deborah\n"
+"POT-Creation-Date: 2014-11-26 17:11-0700\n"
+"PO-Revision-Date: 2014-11-26 17:12-0700\n"
+"Last-Translator: Web Savvy Marketing <noreply@web-savvy-marketing.com>\n"
+"Language-Team: Web Savvy Marketing <noreply@web-savvy-marketing.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:76
+msgid "About the Author"
+msgstr ""
+
+#: functions.php:106
+msgid "Categories: "
+msgstr ""
+
+#: functions.php:106
+msgid "Tags: "
+msgstr ""
+
+#: functions.php:116
+msgid "Read More >>"
+msgstr ""
+
+#: functions.php:145
+msgid "Primary Navigation Menu"
+msgstr ""
+
+#: functions.php:146
+msgid "Secondary Navigation Menu"
+msgstr ""
+
+#: functions.php:147
+msgid "Footer Navigation Menu"
+msgstr ""
+
+#: functions.php:169
+msgid "Rotator"
+msgstr ""
+
+#: functions.php:170
+msgid "This is the image rotator section."
+msgstr ""
+
+#: functions.php:174
+msgid "Home CTA 1"
+msgstr ""
+
+#: functions.php:175
+msgid "This is the Home Page top left."
+msgstr ""
+
+#: functions.php:179
+msgid "Home CTA 2"
+msgstr ""
+
+#: functions.php:180
+msgid "This is the Home Page top center."
+msgstr ""
+
+#: functions.php:184
+msgid "Home CTA 3"
+msgstr ""
+
+#: functions.php:185
+msgid "This is the Home Page top right."
+msgstr ""
+
+#: functions.php:189
+msgid "Home Middle 1"
+msgstr ""
+
+#: functions.php:190
+msgid "This is the Home Page middle left."
+msgstr ""
+
+#: functions.php:194
+msgid "Home Middle 2"
+msgstr ""
+
+#: functions.php:195
+msgid "This is the Home Page middle center."
+msgstr ""
+
+#: functions.php:199
+msgid "Home Sidebar"
+msgstr ""
+
+#: functions.php:200
+msgid "This is the Home Page Sidebar."
+msgstr ""
+
+#: functions.php:204
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:205
+msgid "This is the Blog Page Sidebar."
+msgstr ""
+
+#: functions.php:209
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:210
+msgid "This is the Page Sidebar."
+msgstr ""
+
+#: functions.php:214
+msgid "Store Sidebar"
+msgstr ""
+
+#: functions.php:215
+msgid "This is the page sidebar."
+msgstr ""
+
+#: functions.php:219
+msgid "Bottom Sponsors"
+msgstr ""
+
+#: functions.php:220
+msgid "This is the bottom sponsors logo"
+msgstr ""
+
+#: functions.php:275
+msgid "Buy Product"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:35
+#: lib/admin/deborah-theme-settings.php:36
+msgid "Deborah Settings"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:124
+msgid "PTSA Logo"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:125
+msgid "Social Profiles"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:126
+msgid "Footer Info"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:127
+msgid "Gravity Forms Auto Placeholders"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:128
+msgid "Update Notifications"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:141
+msgid "Display PTSA Everychild Onevoice logo with the city name above."
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:142
+msgid ""
+"By default, leaving this unchecked will apply regular image logo or just use "
+"a text logo"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:144
+msgid "City Name:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:156
+msgid "Facebook URL:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:160
+msgid "Twitter URL:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:164
+msgid "Google+ URL:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:168
+msgid "LinkedIn URL:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:172
+msgid "Youtube URL:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:186
+msgid "Credit Info:"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:199
+msgid ""
+"Only convert labels to placeholders on forms or form items with the class "
+"<strong><em>gforms-placeholder</em></strong>"
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:200
+msgid ""
+"By default, leaving this unchecked will apply the effect to all Gravity Form "
+"fields."
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:210
+msgid ""
+"Please check the box below if you wish to ignore/hide the theme update "
+"notification.<br/>Uncheck the box if you wish to be notified of theme "
+"updates."
+msgstr ""
+
+#: lib/admin/deborah-theme-settings.php:214
+msgid "Ignore Theme Updates?"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:161 lib/plugins/plugins.php:80
+msgid "Install Required Plugins"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:162 lib/plugins/plugins.php:81
+msgid "Install Plugins"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:163 lib/plugins/plugins.php:82
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:165 lib/plugins/plugins.php:84
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:166 lib/plugins/plugins.php:85
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:167 lib/plugins/plugins.php:86
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:168 lib/plugins/plugins.php:87
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:169 lib/plugins/plugins.php:88
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:170 lib/plugins/plugins.php:89
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:171 lib/plugins/plugins.php:90
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:172 lib/plugins/plugins.php:91
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:173 lib/plugins/plugins.php:92
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:174
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:175 lib/plugins/plugins.php:94
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:177
+#: lib/plugins/class-tgm-plugin-activation.php:1945 lib/plugins/plugins.php:95
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:178
+#: lib/plugins/class-tgm-plugin-activation.php:1636
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:534
+#: lib/plugins/class-tgm-plugin-activation.php:2162
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1169
+msgid "Private Repository"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1172
+msgid "Pre-Packaged"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1177
+msgid "WordPress Repository"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1180
+msgid "Required"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1180
+msgid "Recommended"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1183
+msgid "Not Installed"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1185
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1290
+#: lib/plugins/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1312
+#: lib/plugins/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1928
+msgid "Install package not available."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1929
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1930
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1931
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1932
+msgid "Plugin install failed."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1933
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:1944
+msgid "Plugin activation failed."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2058
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2059
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2059
+#: lib/plugins/class-tgm-plugin-activation.php:2068
+msgid "Show Details"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2059
+#: lib/plugins/class-tgm-plugin-activation.php:2068
+msgid "Hide Details"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2060
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2061
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2065
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2068
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2069
+msgid "All installations have been completed."
+msgstr ""
+
+#: lib/plugins/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/plugins/plugins.php:83
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: lib/plugins/plugins.php:93
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/plugins/plugins.php:96
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: lib/structure/comment-form.php:28
+msgid "Name"
+msgstr ""
+
+#: lib/structure/comment-form.php:33
+msgid "Email"
+msgstr ""
+
+#: lib/structure/comment-form.php:38
+msgid "Website"
+msgstr ""
+
+#: lib/structure/comment-form.php:42
+msgid "Comment"
+msgstr ""
+
+#: lib/structure/comment-form.php:53
+msgid "Leave a Comment"
+msgstr ""
+
+#: lib/structure/comment-form.php:54
+msgid "Submit >>"
+msgstr ""
+
+#: lib/structure/comment-form.php:55
+msgid "Reply"
+msgstr ""
+
+#: lib/structure/comment-form.php:56
+msgid "Cancel"
+msgstr ""
+
+#: lib/structure/header.php:57
+msgid "Twitter"
+msgstr ""
+
+#: lib/structure/header.php:61
+msgid "LinkedIn"
+msgstr ""
+
+#: lib/structure/header.php:65
+msgid "Facebook"
+msgstr ""
+
+#: lib/structure/header.php:69
+msgid "Google+"
+msgstr ""
+
+#: lib/structure/header.php:73
+msgid "Youtube"
+msgstr ""
+
+#: lib/widgets/call-to-action.php:18 lib/widgets/wsm-sidebar-button.php:18
+msgid "Displays backgrounds and customizable headline and Link"
+msgstr ""
+
+#: lib/widgets/call-to-action.php:20
+msgid "Web Savvy - CTA Widget"
+msgstr ""
+
+#: lib/widgets/call-to-action.php:118
+msgid "Title "
+msgstr ""
+
+#: lib/widgets/call-to-action.php:121 lib/widgets/wsm-featured-page.php:258
+msgid "More Text"
+msgstr ""
+
+#: lib/widgets/call-to-action.php:124
+msgid "Link"
+msgstr ""
+
+#: lib/widgets/call-to-action.php:127
+msgid "Update Color"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:43
+msgid "Displays featured page with thumbnails"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:52
+msgid "WSM - Featured Page"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:198 lib/widgets/wsm-featured-post.php:272
+#: lib/widgets/wsm-featured-post.php:308 lib/widgets/wsm-featured-post.php:433
+#: lib/widgets/wsm-sidebar-button.php:111
+msgid "Title"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:203
+msgid "Page"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:211 lib/widgets/wsm-featured-post.php:363
+msgid "Show Featured Image"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:215 lib/widgets/wsm-featured-post.php:367
+msgid "Image Size"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:227 lib/widgets/wsm-featured-post.php:379
+msgid "Image Alignment"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:229 lib/widgets/wsm-featured-post.php:351
+#: lib/widgets/wsm-featured-post.php:381
+msgid "None"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:230 lib/widgets/wsm-featured-post.php:352
+#: lib/widgets/wsm-featured-post.php:382
+msgid "Left"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:231 lib/widgets/wsm-featured-post.php:353
+#: lib/widgets/wsm-featured-post.php:383
+msgid "Right"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:239
+msgid "Show Page Title"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:244
+msgid "Show Page Content"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:248
+msgid "Content Character Limit"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:252
+msgid "Custom Text:"
+msgstr ""
+
+#: lib/widgets/wsm-featured-page.php:254
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:51
+msgid "By"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:54
+msgid "[Read More...]"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:58
+msgid "More Posts from this Category"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:63
+msgid "Displays featured posts with thumbnails"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:72
+msgid "Web Savvy - Featured Posts"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:281
+msgid "Category"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:288
+msgid "All Categories"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:295 lib/widgets/wsm-featured-post.php:438
+msgid "Number of Posts to Show"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:300
+msgid "Number of Posts to Offset"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:305
+msgid "Order By"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:307
+msgid "Date"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:309
+msgid "Parent"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:310
+msgid "ID"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:311
+msgid "Comment Count"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:312
+msgid "Random"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:317
+msgid "Sort Order"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:319
+msgid "Descending (3, 2, 1)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:320
+msgid "Ascending (1, 2, 3)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:326
+msgid "Exclude Previously Displayed Posts?"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:335
+msgid "Show Author Gravatar"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:339
+msgid "Gravatar Size"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:341
+msgid "Small (45px)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:342
+msgid "Medium (65px)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:343
+msgid "Large (85px)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:344
+msgid "Extra Large (125px)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:349
+msgid "Gravatar Alignment"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:397
+msgid "Show Post Title"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:402
+msgid "Show Post Info"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:407
+msgid "Content Type"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:409
+msgid "Show Content"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:410
+msgid "Show Excerpt"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:411
+msgid "Show Content Limit"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:412
+msgid "No Content"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:415
+msgid "Limit content to"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:417
+msgid "characters"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:422
+msgid "More Text (if applicable)"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:430
+msgid ""
+"To display an unordered list of more posts from this category, please fill "
+"out the information below"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:448
+msgid "Show Category Archive Link"
+msgstr ""
+
+#: lib/widgets/wsm-featured-post.php:452
+msgid "Link Text"
+msgstr ""
+
+#: lib/widgets/wsm-sidebar-button.php:20
+msgid "Web Savvy - Button Widget"
+msgstr ""
+
+#: lib/widgets/wsm-sidebar-button.php:114
+msgid "Link "
+msgstr ""
+
+#: lib/widgets/wsm-sidebar-button.php:117
+msgid "Icon "
+msgstr ""
