@@ -45,7 +45,7 @@ function update_notifier() {
         <div id="instructions" style="max-width: 800px;">
             <h3>Update Download and Instructions</h3>
             <p><strong>Please note:</strong> make a <strong>backup</strong> of your <?php echo $theme_data->get( 'Name' ); ?> Theme prior to upgrading.</p>
-            <p>To update the Theme, login to your <a href="http://www.web-savvy-marketing.com/my-account/" target="_blank">My Account</a> page and re-download the theme like you did when you bought it.</p>
+            <p>To update the Theme, login to your <a href="https://www.web-savvy-marketing.com/my-account/" target="_blank">My Account</a> page and re-download the theme like you did when you bought it.</p>
             <p>Extract the <strong><?php echo strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $theme_data->get( 'Name' )))); ?>-<?php echo $xml->latest; ?>.zip</strong> file's contents, look for the extracted theme folder, upload the folder's contents using FTP to the <strong>/wp-content/themes/<?php echo strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $theme_data->get( 'Name' )))); ?>/</strong> folder overwriting the old files (this is why it's important to backup any changes you've made to the theme files).</p>
             <p>If you didn't make any changes to the theme files, you are free to overwrite them with the new ones without the risk of losing theme settings, pages, posts, etc.</p>
             <p>If you have made any changes to the theme files <strong>updating will overwrite your customizations</strong>. In that case you may elect not to update your theme. You may go to the <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=deborah"><?php echo $theme_data->get( 'Name' ); ?> Settings</a> page to disable this update notification.</p>
@@ -64,7 +64,7 @@ function update_notifier() {
 // For performance reasons this function caches the xml content in the database for XX seconds ($interval variable)
 function get_latest_theme_version( $interval ) {
 	// remote xml file location
-	$notifier_file_url = 'http://www.web-savvy-marketing.com/files/theme-versions/deborah.xml';
+	$notifier_file_url = 'https://www.web-savvy-marketing.com/files/theme-versions/deborah.xml';
 
 	$db_cache_field = 'contempo-notifier-cache';
 	$db_cache_field_last_updated = 'contempo-notifier-last-updated';

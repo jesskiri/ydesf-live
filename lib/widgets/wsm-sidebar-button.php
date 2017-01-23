@@ -17,7 +17,7 @@ class WSM_BTN_Widget extends WP_Widget {
 	function WSM_BTN_Widget() {
 		$widget_ops = array( 'classname' => 'wsm-btn', 'description' => __('Displays backgrounds and customizable headline and Link', 'deborah') );
 		$control_ops = array( 'width' => 200, 'height' => 250, 'id_base' => 'wsm-btn-widget' );
-		$this->WP_Widget( 'wsm-btn-widget', __('Web Savvy - Button Widget', 'deborah'), $widget_ops, $control_ops );
+		parent::__construct( 'wsm-btn-widget', __('Web Savvy - Button Widget', 'deborah'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -34,6 +34,15 @@ class WSM_BTN_Widget extends WP_Widget {
 			'wsm-morelink' => '',
 			'wsm-icon' => '',
 		) );
+
+		// WMPL
+		/**
+		 * Filter strings for WPML translation
+     	 */
+     	$instance['wsm-title'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-title'], 'Widgets', 'Web Savvy - Button Widget - Title' );
+     	$instance['wsm-morelink'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-morelink'], 'Widgets', 'Web Savvy - Button Widget - Link' );
+     	$instance['wsm-icon'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-icon'], 'Widgets', 'Web Savvy - Button Widget - Icon' );
+     	// WPML
 
 
 		echo $before_widget;
@@ -87,6 +96,16 @@ class WSM_BTN_Widget extends WP_Widget {
 		$new_instance['wsm-title'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['wsm-title']) ) );
 		$new_instance['wsm-morelink'] = strip_tags( $new_instance['wsm-morelink'] );
 		$new_instance['wsm-icon'] = strip_tags( $new_instance['wsm-icon'] );
+
+		// WMPL
+		/**
+		 * register strings for translation
+     	 */
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Button Widget - Title', $new_instance['wsm-title'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Button Widget - Link', $new_instance['wsm-morelink'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Button Widget - icon', $new_instance['wsm-icon'] );
+	 	// WPML
+
 		return $new_instance;
 	}
 

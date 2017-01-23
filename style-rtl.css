@@ -3,7 +3,7 @@
 	Description: Custom child theme created especially for Deborah by Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.1.2
+	Version: 1.1.7
 
 	Template: genesis
 
@@ -17,8 +17,8 @@
 Imports
 ---------------------------------------------------------------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800);
+@import url(//fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
 /*
 Right to Left styles
@@ -104,7 +104,6 @@ body {
 	color: #4a4b4c;
 	font-family: 'Raleway', sans-serif;
 	font-size: 17px;
-	font-size: 1.7rem;
 	font-weight: 400;
 	line-height: 1.5;
 }
@@ -141,7 +140,6 @@ a {
 
 a img {
 	margin-bottom: -4px;
-	margin-bottom: -0.4rem;
 }
 
 a:hover {
@@ -150,7 +148,6 @@ a:hover {
 
 p {
 	margin: 0 0 20px;
-	margin: 0 0 2rem;
 	padding: 0;
 }
 
@@ -168,7 +165,6 @@ blockquote {
 	background: url(images/blockquote.png) no-repeat 0 5px;
 	color: #67686b;
 	margin: 40px 20px 20px 0;
-	margin: 4rem 2rem 2rem 0;
 	padding-right: 40px;
 }
 
@@ -176,7 +172,6 @@ blockquote em {
 	color: #077bc1;
 	display: block;
 	margin: 10px 0 0;
-	margin: 1rem 0 0;
 }
 
 .entry-content code {
@@ -197,12 +192,10 @@ hr {
 	border: 0;
 	height: 1px;
 	margin: 0 0 20px;
-	margin: 0 0 2rem;
 }
 
 .box {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 /* Headings
@@ -219,37 +212,30 @@ h6 {
 	font-weight: 500;
 	line-height: 1.2;
 	margin: 0 0 16px;
-	margin: 0 0 1.6rem;
 }
 
 h1 {
 	font-size: 28px;
-	font-size: 2.8rem;
 }
 
 h2 {
 	font-size: 26px;
-	font-size: 2.6rem;
 }
 
 h3 {
 	font-size: 24px;
-	font-size: 2.4rem;
 }
 
 h4 {
 	font-size: 20px;
-	font-size: 2rem;
 }
 
 h5 {
 	font-size: 18px;
-	font-size: 1.8rem;
 }
 
 h6 {
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 /* Objects
@@ -282,9 +268,7 @@ textarea {
 	border: 1px solid #ddd;
 	color: #4a4b4c;
 	font-size: 16px;
-	font-size: 1.6rem;
 	padding: 6px;
-	padding: 0.6rem;
 	width: 100%;
 }
 
@@ -328,9 +312,7 @@ input[type="submit"],
 	cursor: pointer;
 	font-family: 'Gloria Hallelujah',cursive;
 	font-size: 15px;
-	font-size: 1.5rem;
 	padding: 5px 24px;
-	padding: 0.5rem 2.4rem;
 	width: auto;
 }
 
@@ -365,7 +347,6 @@ table {
 	border-spacing: 0;
 	line-height: 2;
 	margin-bottom: 40px;
-	margin-bottom: 4rem;
 	width: 100%;
 }
 
@@ -386,7 +367,42 @@ th {
 td {
 	border-top: 1px solid #ddd;
 	padding: 6px 0;
-	padding: 0.6rem 0;
+}
+
+/* ## Screen Reader Text
+--------------------------------------------- */
+
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus,
+.genesis-nav-menu .search input[type="submit"]:focus,
+.widget_search input[type="submit"]:focus  {
+	clip: auto !important;
+	height: auto;
+	width: auto;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 15px 23px 14px;
+	color: #333;
+	background: #fff;
+	z-index: 100000; /* Above WP toolbar. */
+	text-decoration: none;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+}
+
+.more-link {
+    position: relative;
 }
 
 
@@ -405,7 +421,6 @@ Structure and Layout
 .site-inner {
 	clear: both;
 	padding: 60px 0 30px;
-	padding: 6rem 0 3rem;
 }
 
 /* Column Widths and Positions
@@ -464,7 +479,6 @@ Structure and Layout
 .two-thirds {
 	float: right;
 	margin-bottom: 20px;
-	margin-bottom: 2rem; /* based on 10px = 100% */
 	margin-right: 2.564102564102564%;
 }
 
@@ -535,12 +549,10 @@ Common Classes
 
 .alignleft .avatar {
 	margin-left: 24px;
-	margin-left: 2.4rem;
 }
 
 .alignright .avatar {
 	margin-right: 24px;
-	margin-right: 2.4rem;
 }
 
 .search-form {
@@ -550,7 +562,6 @@ Common Classes
 .search-form input[type="submit"] {
 	bottom: 0;
 	padding: 0 8px;
-	padding: 0 0.8rem;
 	position: absolute;
 	left: 0;
 }
@@ -572,13 +583,11 @@ img.centered,
 .aligncenter {
 	display: block;
 	margin: 0 auto 24px;
-	margin: 0 auto 2.4rem;
 }
 
 .alignnone img,
 img.alignnone {
 	margin-bottom: 12px;
-	margin-bottom: 1.2rem;
 }
 
 .alignleft {
@@ -595,19 +604,16 @@ img.alignleft,
 .alignleft img,
 .wp-caption.alignleft {
 	margin: 5px 0 12px 24px;
-	margin: 0.5rem 0 1.2rem 2.4rem;
 }
 
 img.alignright,
 .alignright img,
 .wp-caption.alignright {
 	margin: 5px 24px 12px 0;
-	margin: 0.5rem 2.4rem 1.2rem 0;
 }
 
 .wp-caption-text {
 	font-size: 14px;
-	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: center;
 }
@@ -640,28 +646,23 @@ img.alignright,
 
 .breadcrumb {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 .archive-description,
 .author-box {
 	background-color: #fff;
 	margin-bottom: 40px;
-	margin-bottom: 4rem;
 }
 
 .archive-description {
 	padding: 40px 40px 24px;
-	padding: 4rem 4rem 2.4rem;
 }
 
 
 .author-box-title {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
-	font-size: 2rem;
 	margin-bottom: 4px;
-	margin-bottom: 0.4rem;
 }
 
 .author-box a {
@@ -676,7 +677,6 @@ img.alignright,
 .author-box .avatar {
 	border: 3px solid #CDCFD0;
 	margin: 5px 0 0 24px;
-	margin: 0.5rem 0 0 2.4rem;
 }
 
 /* Titles
@@ -684,7 +684,6 @@ img.alignright,
 
 .entry-title {
 	font-size: 28px;
-	font-size: 2.8rem;
 	line-height: 1;
 }
 
@@ -701,9 +700,7 @@ img.alignright,
 .widget-title {
 	color: #231f20;
 	font-size: 23px;
-	font-size: 2.3rem;
 	margin-bottom: 24px;
-	margin-bottom: 2.4rem;
 }
 
 .sidebar .widget-title a {
@@ -712,9 +709,7 @@ img.alignright,
 
 .archive-title {
 	font-size: 20px;
-	font-size: 2rem;
 	margin-bottom: 24px;
-	margin-bottom: 2.4rem;
 }
 
 
@@ -728,9 +723,7 @@ Widgets
 .featured-content .entry {
 	border-bottom: 2px solid #d4d6d8;
 	margin-bottom: 10px;
-	margin-bottom: 1rem;
 	padding: 0 0 10px;
-	padding: 0 0 1rem;
 }
 
 .featured-content article:last-child {
@@ -744,7 +737,6 @@ Widgets
 .featured-content .entry-title {
 	border: none;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.5;
 	margin-bottom: 0;
@@ -761,7 +753,6 @@ Widgets
 
 .featured-content .entry-content {
 	margin-top: 10px;
-	margin-top: 1rem;
 }
 
 .featured-content .page .entry-content,
@@ -782,7 +773,6 @@ Widgets
 .featured-content.wsmfeaturedpost .entry-meta {
 	display: inline;
 	margin-left: 5px;
-	margin-left: 0.5rem;
 }
 
 .featured-content.wsmfeaturedpost .entry-title  {
@@ -800,7 +790,6 @@ Widgets
 .site-header .social-media {
 	float: left;
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 	overflow: hidden;
 }
 
@@ -810,7 +799,6 @@ Widgets
 	float: right;
 	height: 30px;
 	margin-left: 4px;
-	margin-left: 0.4rem;
 	text-align: right;
 	text-indent: -9999px;
 	width: 31px;
@@ -849,7 +837,6 @@ Widgets
 	border: 0;
 	color: #fff;
 	padding: 20px;
-	padding: 2rem;
 }
 
 .sidebar .wsm-btn .btn-title a,
@@ -857,7 +844,6 @@ Widgets
 .wsm-btn .btn-title {
 	color: #fff;
 	font-size: 28px;
-	font-size: 2.8rem;
 	line-height: 1;
 	margin-bottom: 0;
 }
@@ -875,7 +861,6 @@ Widgets
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	padding-left: 42px;
-	padding-left: 4.2rem;
 }
 
 /* WSM CTA */
@@ -892,7 +877,6 @@ Widgets
 
 .wsm-cta .cta-box {
 	padding: 20px;
-	padding: 2rem;
 }
 
 .wsm-cta .cta-box .more-link {
@@ -904,7 +888,6 @@ Widgets
 	box-shadow: 0 0 3px #CCC;
 	color: #fff;
 	padding: 0 20px;
-	padding: 0 2rem;
 }
 
 .ie7 .wsm-cta .cta-box .more-link a,
@@ -948,7 +931,6 @@ Plugins
 
 .enews-widget input {
 	margin-bottom: 16px;
-	margin-bottom: 1.6rem;
 }
 
 .enews-widget input:focus {
@@ -972,7 +954,6 @@ Plugins
 
 .latest-tweets ul li {
 	margin-bottom: 16px;
-	margin-bottom: 1.6rem;
 }
 
 /* Gravity Forms
@@ -985,7 +966,6 @@ div.gform_wrapper {
 	max-width: 100%;
 	overflow: hidden;
 	padding: 20px;
-	padding: 2rem;
 }
 
 div.gform_wrapper .gform_body {
@@ -1016,9 +996,7 @@ div.gform_wrapper input[type="text"],
 div.gform_wrapper textarea,
 div.gform_wrapper .ginput_complex label {
 	font-size: 16px;
-	font-size: 1.6rem;
 	padding: 6px;
-	padding: 0.6rem;
 }
 
 div.gform_wrapper .gfield_required {
@@ -1038,7 +1016,6 @@ div.gform_wrapper .ginput_complex label {
 div.gform_wrapper li,
 div.gform_wrapper form li {
 	margin: 16px 0 0;
-	margin: 1.6rem 0 0;
 }
 
 .ie div.gform_wrapper .gform_footer input[type="submit"],
@@ -1046,14 +1023,11 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 	background-color: #e21e2f;
 	border: 0;
 	font-size: 16px;
-	font-size: 1.6rem;
 	padding: 1px 20px;
-	padding: 0.1rem 2rem;
 }
 
 .ie8 div.gform_wrapper .gform_footer input[type="submit"] {
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.5;
 	padding: 5px 20px;
@@ -1061,7 +1035,6 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 
 .ie7 div.gform_wrapper .gform_footer input[type="submit"] {
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.5;
 	padding: 3px 5px;
@@ -1080,13 +1053,11 @@ div.gform_wrapper .gfield_checkbox li label,
 div.gform_wrapper .gfield_radio li label {
 	display: inline !important;
 	margin-right: 10px;
-	margin-right: 1rem;
 }
 
 div.gform_wrapper li.gf_list_inline ul.gfield_checkbox li,
 div.gform_wrapper li.gf_list_inline ul.gfield_radio li {
 	margin-left: 20px;
-	margin-left: 2rem;
 }
 
 div.gform_wrapper span.gform_description {
@@ -1101,15 +1072,12 @@ div.gform_wrapper span.gform_description {
     color: #FFF;
     max-width: 100%;
 	padding: 20px;
-    padding: 2rem;
 }
 
 .sidebar .gform_widget .widget-title {
 	color: #fff;
 	font-size: 28px;
-	font-size: 2.8rem;
 	margin-bottom: 10px;
-	margin-bottom: 1rem;
 	text-align: center;
 }
 
@@ -1124,7 +1092,6 @@ div.gform_wrapper span.gform_description {
 .sidebar div.gform_wrapper h2.gsection_title,
 .sidebar div.gform_wrapper h3.gform_title {
 	font-size: 28px;
-	font-size: 2.8rem;
 	text-align: center;
 }
 
@@ -1180,7 +1147,6 @@ table.tablepress {
 
 span.tablepress-table-description {
     margin-bottom: 16px;
-	margin-bottom: 1rem;
 }
 
 table.tablepress .odd td,
@@ -1189,7 +1155,6 @@ table.tablepress .even td {
 	color: #333132;
 	font-family: 'Arial',Helvetica,sans-serif;
 	font-size: 14px;
-	font-size: 1.4rem;
 }
 
 table.tablepress th,
@@ -1307,7 +1272,6 @@ div.tribe-events-day .tribe-events-day-time-slot h5 {
 	border-radius: 4px;
 	font-weight: 400;
 	padding: 5px 12px;
-	padding: 0.5rem 1.2rem;
 }
 
 body.single-tribe_events .tribe-events-event-meta {
@@ -1317,7 +1281,6 @@ body.single-tribe_events .tribe-events-event-meta {
 
 body.single-tribe_events .tribe-events-content {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 /* Calendar Events Widget--------------------- */
@@ -1336,9 +1299,7 @@ body.single-tribe_events .tribe-events-content {
 	border-bottom: 2px solid #D4D6D8;
 	list-style: none;
 	margin-bottom: 10px;
-	margin-bottom: 1rem;
 	padding-bottom: 10px;
-	padding-bottom: 1pxrem;
 }
 
 .home .content .tribe-events-adv-list-widget ol li:last-child,
@@ -1351,7 +1312,6 @@ body.single-tribe_events .tribe-events-content {
 .tribe-events-adv-list-widget div.duration,
 .tribe-events-list-widget div.duration {
 	font-size: 14px;
-	font-size: 1.4rem;
 }
 
 .tribe-events-adv-list-widget .entry-title a,
@@ -1360,7 +1320,6 @@ body.single-tribe_events .tribe-events-content {
 .tribe-events-list-widget .entry-title {
 	color: #4A4B4C;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 400;
 }
 
@@ -1378,7 +1337,6 @@ a.tribe-events-read-more,
 	color: #E21E2F;
 	font-family: 'Gloria Hallelujah',cursive;
 	font-size: 16px;
-    font-size: 1.6rem;
 }
 
 .tribe-events-adv-list-widget .entry-title a:hover,
@@ -1467,10 +1425,8 @@ body.woocommerce-page #content input.button {
 	color: #fff;
 	filter: 0;
 	font-size: 14px;
-	font-size: 1.4rem;
 	font-weight: 400;
 	padding: 4px 10px;
-	padding: 0.4rem 1rem;
 	text-shadow: none;
 }
 
@@ -1516,7 +1472,6 @@ body.woocommerce-page ul li.product a.button {
 div.woocommerce ul li.product a.button-details,
 body.woocommerce-page ul li.product a.button-details {
 	margin-left: 8px;
-	margin-left: 0.8rem;
 }
 
 body.woocommerce-page ul li.product a:hover.button {
@@ -1526,7 +1481,6 @@ body.woocommerce-page ul li.product a:hover.button {
 body.woocommerce-page a.button,
 div.woocommerce .buttons a.button {
 	margin: 0 0 5px;
-	margin: 0 0 0.5rem;
 }
 
 div.woocommerce ul.products li.product .onsale,
@@ -1542,7 +1496,6 @@ body.woocommerce-page span.onsale {
 body.woocommerce-page .woocommerce-ordering,
 body.woocommerce-page .woocommerce-result-count {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 div.woocommerce ul.products li.product h3,
@@ -1550,7 +1503,6 @@ body.woocommerce-page ul.products li.product h3 {
 	color: #3C557C;
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-size: 15px;
-	font-size: 1.5rem;
 }
 
 div.woocommerce div.product .product_title,
@@ -1563,7 +1515,6 @@ body.woocommerce-page #content div.product .product_title {
 body.woocommerce-page ul.products li.product .price {
 	color: #808285;
 	font-size: 18px;
-	font-size: 1.8rem;
 	font-weight: 400;
 }
 
@@ -1573,7 +1524,6 @@ body.woocommerce-page #content div.product span.price,
 body.woocommerce-page #content div.product p.price {
 	color: #808285;
 	font-size: 20px;
-	font-size: 2rem;
 	font-weight: 400;
 }
 
@@ -1607,7 +1557,6 @@ body.woocommerce-page #content div.product div.images img {
 div.woocommerce .products .star-rating,
 body.woocommerce-page .products .star-rating {
 	margin: 0 auto 5px;
-	margin: 0 auto 0.5rem;
 }
 
 div.woocommerce .entry-summary .product_meta .sku_wrapper,
@@ -1645,7 +1594,6 @@ body.woocommerce-page  form.woocommerce-ordering select {
 	height: 36px;
 	line-height: 1;
 	padding-left: 20px;
-	padding-left: 2rem;
 	text-indent: 0.01px;
 	text-overflow: "";
 }
@@ -1675,7 +1623,6 @@ div.woocommerce div.product div.summary ul,
 body.woocommerce-page div.product div.summary ol,
 body.woocommerce-page div.product div.summary ul {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 div.woocommerce div.product div.summary ol,
@@ -1683,7 +1630,6 @@ div.woocommerce div.product div.summary ul,
 body.woocommerce-page div.product div.summary ol,
 body.woocommerce-page div.product div.summary ul {
 	margin-right: 16px;
-	margin-right: 1.6rem;
 }
 
 body.woocommerce-page div.product div.summary ol li,
@@ -1715,14 +1661,12 @@ body.woocommerce-page .product_meta .posted_in {
 .woocommerce-page .product_meta {
 	color: #3C557C;
 	font-size: 15px;
-	font-size: 1.5rem;
 	font-weight: 400;
 }
 
 div.woocommerce div.product  .summary form.cart .single_add_to_cart_button,
 body.woocommerce-page div.product  .summary form.cart .single_add_to_cart_button {
 	padding: 7px 20px;
-	padding: 0.7rem 2rem;
 }
 
 
@@ -1735,7 +1679,6 @@ div.woocommerce .related h2,
 body.woocommerce-page .related h2 {
 	color: #231f20;
 	font-size: 22px;
-	font-size: 2.2rem;
 }
 
 div.woocommerce .cart-collaterals .cart_totals table th,
@@ -1816,7 +1759,6 @@ body.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li {
 	border-radius: 6px 6px 0 0;
 	color: #231f20;
 	font-size: 14px;
-	font-size: 1.4rem;
 	margin: 0;
 	padding: 0;
 }
@@ -1843,7 +1785,6 @@ body.woocommerce-page #content div.product .woocommerce-tabs .panel {
 	border: 0;
 	border-radius: 6px 0 6px 6px;
 	padding: 30px 20px;
-	padding: 3rem 2rem;
 }
 
 div.woocommerce table.shop_attributes td,
@@ -1868,7 +1809,6 @@ Site Header
 .site-header .wrap {
 	min-height: 143px;
 	padding: 25px 0 20px;
-	padding: 2.5rem 0 2rem;
 	position: relative;
 }
 
@@ -1894,11 +1834,9 @@ Site Header
 
 .site-title {
 	font-size: 52px;
-	font-size: 5.2rem;
 	font-weight: 800;
 	line-height: 1;
 	margin: 15px 0 0;
-	margin: 1.5rem 0 0;
 }
 
 .site-title a,
@@ -1909,7 +1847,6 @@ Site Header
 .site-description {
 	color: #3d567d;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 600;
 	line-height: 1;
 	margin-bottom: 0;
@@ -1947,7 +1884,6 @@ Site Header
 .site-name {
 	font-family: 'Arial',Helvetica,sans-serif;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 700;
 }
 
@@ -1958,7 +1894,6 @@ Site Header
 	float: right;
 	min-height: 98px;
 	padding-bottom: 75px;
-	padding-bottom: 7.5rem;
 	width: 100%;
 }
 
@@ -1989,7 +1924,25 @@ Site Header
 .site-header .search-form {
 	float: left;
 	margin-top: 24px;
-	margin-top: 2.4rem;
+}
+
+
+/* # Skip Links
+---------------------------------------------------------------------------------------------------- */
+.genesis-skip-link {
+	margin: 0;
+}
+
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
 }
 
 
@@ -2010,7 +1963,6 @@ Site Navigation
 .genesis-nav-menu .menu-item {
 	display: inline-block;
 	font-size: 16px;
-	font-size: 1.6rem;
 	text-align: right;
 }
 
@@ -2029,7 +1981,6 @@ Site Navigation
 	color: #FFF;
 	display: block;
 	padding: 10px 28px;
-	padding: 1rem 2.8rem;
 	position: relative;
 }
 
@@ -2057,9 +2008,7 @@ Site Navigation
 	border-top: none;
 	color: #3d567d;
 	font-size: 17px;
-	font-size: 1.7rem;
 	padding: 8px 20px;
-	padding: 0.8rem 2rem;
 	position: relative;
 	-webkit-transition: none;
 	-moz-transition:    none;
@@ -2115,10 +2064,8 @@ Site Navigation
 	display: block;
 	float: left;
 	font-size: 16px;
-	font-size: 1.6rem;
 	list-style-type: none;
 	padding: 10px 0 10px 20px;
-	padding: 1rem 0 1rem 2rem;
 	text-transform: uppercase;
 }
 
@@ -2135,20 +2082,29 @@ Site Navigation
 .genesis-nav-menu > .rss > a {
 	background: url(images/rss.png) no-repeat 0 center;
 	margin-right: 10px;
-	margin-right: 1rem;
 	padding-right: 20px;
-	padding-right: 2rem;
 }
 
 .genesis-nav-menu > .search {
 	padding: 5px 10px 0;
-	padding: 0.5rem 1rem 0;
 }
 
 .genesis-nav-menu > .twitter {
 	background: url(images/twitter-nav.png) no-repeat 0 center transparent;
 	padding-right: 20px;
-	padding-right: 2rem;
+}
+
+/* ## Accessible Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sfHover > ul.sub-menu {
+	right: auto;
+	opacity: 1;
 }
 
 /* Site Header Navigation
@@ -2221,7 +2177,6 @@ Site Navigation
 .nav-secondary .genesis-nav-menu .menu-item {
 	font-family: 'Arial',Helvetica,sans-serif;
 	font-size: 15px;
-	font-size: 1.5rem;
 }
 
 .nav-secondary .genesis-nav-menu  .menu-item > a {
@@ -2229,7 +2184,6 @@ Site Navigation
 	color: #3e3e3f;
 	display: block;
 	padding: 4px 14px;
-	padding: 0.4rem 1.4rem;
 	position: relative;
 }
 
@@ -2249,14 +2203,12 @@ Site Navigation
 .footer-nav .genesis-nav-menu .menu-item {
 	font-family: 'Arial',Helvetica,sans-serif;
 	font-size: 15px;
-	font-size: 1.5rem;
 }
 
 .footer-nav .genesis-nav-menu  .menu-item > a {
 	background: url(images/icon-dot-footer-menu.png) no-repeat left center;
 	display: block;
 	padding: 0 14px;
-	padding: 0 1.4rem;
 	position: relative;
 }
 
@@ -2304,7 +2256,6 @@ Home Top Slider
 	color: #4a4b4c;
 	filter: 0;
 	font-size: 16px;
-	font-size: 1.6rem;
 	line-height: 1.5;
 	overflow: hidden;
 	text-align: right;
@@ -2313,7 +2264,6 @@ Home Top Slider
 
 div.soliloquy-container .soliloquy-caption .more-link {
 	margin-top: 20px;
-	margin-top: 2rem;
 }
 
 div.soliloquy-container .soliloquy-caption .more-link a {
@@ -2322,7 +2272,6 @@ div.soliloquy-container .soliloquy-caption .more-link a {
 	color: #fff;
 	float: right;
 	padding: 6px 20px;
-	padding: 0.6rem 2rem;
 }
 
 div.soliloquy-container .soliloquy-caption .more-link a:hover {
@@ -2334,12 +2283,10 @@ div.soliloquy-container .soliloquy-caption h3,
 div.soliloquy-container .soliloquy-caption h4 {
 	line-height: 1;
 	margin-bottom: 10px;
-	margin-bottom: 1rem;
 }
 
 div.soliloquy-container .soliloquy-caption h2 {
 	font-size: 48px;
-	font-size: 4.8rem;
 }
 
 
@@ -2364,7 +2311,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 
 .home-cta .widget {
 	padding: 20px;
-	padding: 2rem;
 }
 
 .home-cta1 .wsm-cta .cta-box,
@@ -2422,7 +2368,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 	background: url(images/home-title-border.png) repeat-x 0 center;
 	color: #077bc1;
 	font-size: 23px;
-	font-size: 2.3rem;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
@@ -2431,7 +2376,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 .home .content .widget-title span {
 	background-color: #fff;
 	padding: 0 15px;
-	padding: 0 1.5rem;
 }
 
 .home .content .widget-title::before {
@@ -2446,25 +2390,21 @@ div.soliloquy-container .soliloquy-caption h2 {
 
 .home .content .widget {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 .home .content ol,
 .home .content ul {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 .home .content ol,
 .home .content ul {
 	margin-right: 16px;
-	margin-right: 1.6rem;
 }
 
 .home .content ol li,
 .home .content ul li {
 	margin-bottom: 8px;
-	margin-bottom: 0.8rem;
 }
 
 .home .content ol li {
@@ -2486,12 +2426,10 @@ div.soliloquy-container .soliloquy-caption h2 {
 
 .entry {
 	margin-bottom: 30px;
-	margin-bottom: 3rem;
 }
 
 .single .content .entry {
 	margin-bottom: 40px;
-	margin-bottom: 4rem;
 }
 
 .entry-content a {
@@ -2522,7 +2460,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 .entry-content ul,
 .quote-caption {
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 }
 
 .content .post .entry-content p {
@@ -2536,7 +2473,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 .entry-content ol,
 .entry-content ul {
 	margin-right: 16px;
-	margin-right: 1.6rem;
 }
 
 .entry-content ol li {
@@ -2560,7 +2496,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 .entry-meta {
 	color: #757679;
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 .entry-meta a {
@@ -2573,18 +2508,16 @@ div.soliloquy-container .soliloquy-caption h2 {
 
 .entry-header .entry-meta {
 	margin-bottom: 8px;
-	margin-bottom: 0.8rem;
 }
 
 .entry-meta .sep {
 	padding: 0 4px;
-	padding: 0 0.4rem;
 }
 
 .entry-footer {
 	clear: both;
 	display: block;
-	margin-top: 2rem;
+	margin-top: 20px;
 	padding-top: 20px;
 }
 
@@ -2593,7 +2526,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 	font-weight: 700;
 	margin: 0;
 	padding: 8px 0;
-	padding: 0.8rem 0;
 }
 
 .single .entry-footer .entry-meta {
@@ -2613,7 +2545,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 	background: url(images/icon-dot.png) no-repeat 0 center transparent;
 	margin-right: 5px;
 	padding-right: 10px;
-	padding-right: 1rem;
 }
 
 .more-from-category,
@@ -2621,9 +2552,7 @@ div.soliloquy-container .soliloquy-caption h2 {
 	display: block;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-top: 10px;
-	margin-top: 1rem;
 }
 
 .ie8 .more-from-category,
@@ -2635,7 +2564,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 
 .more-from-category {
 	margin-top: 30px;
-	margin-top: 3rem;
 }
 
 .more-from-category a,
@@ -2654,9 +2582,7 @@ div.soliloquy-container .soliloquy-caption h2 {
 .archive-pagination,
 .entry-pagination {
 	font-size: 14px;
-	font-size: 1.4rem;
 	margin: 40px 0;
-	margin: 4rem 0;
 }
 
 .archive-pagination li {
@@ -2670,7 +2596,6 @@ div.soliloquy-container .soliloquy-caption h2 {
 	cursor: pointer;
 	display: inline-block;
 	padding: 8px 12px;
-	padding: 0.8rem 1.2rem;
 }
 
 .archive-pagination li a:hover,
@@ -2686,13 +2611,11 @@ div.soliloquy-container .soliloquy-caption h2 {
 .entry-pings {
 	background-color: #fff;
 	margin-bottom: 40px;
-	margin-bottom: 4rem;
 }
 
 .comment-respond .comment-reply-title,
 .entry-comments h3 {
 	font-size: 20px;
-	font-size: 2rem;
 }
 
 .comment-respond a,
@@ -2718,66 +2641,19 @@ div.soliloquy-container .soliloquy-caption h2 {
 	position: relative;
 }
 
-.comment-respond input[type="email"],
-.comment-respond input[type="text"] {
-	width: 48.5%
-}
-
-.ie7 .comment-respond input[type="email"],
-.ie7 .comment-respond input[type="text"] {
-	width: 47%
-}
-
-.comment-respond input#email {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-.comment-respond input#url {
-	width: 100%;
-}
-
-.comment-respond textarea#comment {
-	height: 180px;
-	padding-bottom: 50px;
-	padding-bottom: 5rem;
-}
-
-.ie7 .comment-respond textarea#comment,
-.ie7  .comment-respond input#url {
-	width: 98%;
-}
-
 .comment-respond .form-submit input {
 	bottom: 20px;
 	border-radius: 6px 6px 0 0;
-	right: 10px;
 	padding: 0 20px;
-	padding: 0 2rem;
-	position: absolute;
-}
-
-.ie8 .comment-respond .form-submit input {
-	font-family: 'Raleway',sans-serif;
-	padding: 6px 20px;
-}
-
-.ie7 .comment-respond .form-submit input {
-	bottom: 0;
-	font-family: 'Raleway',sans-serif;
-	padding: 4px 10px;
 }
 
 .comment-respond label {
 	display: block;
 	margin-left: 12px;
-	margin-left: 1.2rem;
 }
 
 .comment-list .comment-respond {
 	margin-top: 20px;
-	margin-top: 2rem;
 }
 
 .comment-list li,
@@ -2787,11 +2663,12 @@ div.soliloquy-container .soliloquy-caption h2 {
 
 .comment-list li {
 	margin-top: 24px;
-	margin-top: 2.4rem;
 	padding: 20px;
-	padding: 2rem;
 }
 
+.comment-respond label {
+	display: none;
+}
 
 li.comment {
 	background-color: #f5f5f5;
@@ -2800,7 +2677,6 @@ li.comment {
 
 .comment .avatar {
 	margin: 0 0 24px 16px;
-	margin: 0 0 2.4rem 1.6rem;
 }
 
 .entry-pings .reply {
@@ -2813,21 +2689,17 @@ li.comment {
 .form-allowed-tags {
 	background-color: #f5f5f5;
 	font-size: 14px;
-	font-size: 1.4rem;
 	padding: 24px;
-	padding: 2.4rem;
 }
 
 .comment-meta {
 	font-size: 13px;
-	font-size: 1.3rem;
 }
 
 .comment-reply a {
 	color: #e21e2f;
 	font-family: 'Gloria Hallelujah',cursive;
 	font-size: 14px;
-	font-size: 1.4rem;
 }
 
 .comment-reply a::after {
@@ -2864,14 +2736,12 @@ Sidebars
 .sidebar ol,
 .sidebar ul {
 	margin-right: 16px;
-	margin-right: 1.6rem;
 }
 
 .sidebar li {
 	list-style-image: url(images/bullet-list.png);
 	list-style-type: none;
 	margin-bottom: 6px;
-	margin-bottom: 0.6rem;
 	word-wrap: break-word;
 }
 
@@ -2885,9 +2755,7 @@ Sidebars
 	border-top: 8px solid #e21e2f;
 	border-radius: 6px;
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
 	padding: 20px;
-	padding: 2rem;
 }
 
 .sidebar .enews-widget {
@@ -2901,7 +2769,6 @@ Sidebars
 .sidebar .widget.widget_recent_comments li {
 	list-style-image: none;
 	margin-bottom: 10px;
-	margin-bottom: 1rem;
 }
 
 .sidebar .widget_recent_comments li a {
@@ -2920,7 +2787,6 @@ Bottom Sponsors
 	clear: both;
 	display: block;
 	padding-top: 40px;
-	padding-top: 4rem;
 }
 
 .bottom-sponsors .widget-title {
@@ -2933,7 +2799,6 @@ Bottom Sponsors
 .bottom-sponsors .widget-title span {
 	background-color: #FFFFFF;
 	padding: 0 15px;
-    padding: 0 1.5rem;
 }
 
 
@@ -2947,10 +2812,8 @@ Footer Widgets
 	color: #8c8e90;
 	clear: both;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 500;
 	padding: 40px 0 20px;
-	padding: 4rem 0 2rem;
 }
 
 .footer-widgets-1,
@@ -2990,16 +2853,13 @@ Footer Widgets
 
 .footer-widgets .widget {
 	margin-bottom: 24px;
-	margin-bottom: 2.4rem;
 }
 
 .footer-widgets .widget-title {
 	color: #8c8e90;
 	font-size: 17px;
-	font-size: 1.7rem;
 	font-weight: 800;
 	margin-bottom: 10px;
-	margin-bottom: 1rem;
 	text-transform: none;
 }
 
@@ -3011,12 +2871,15 @@ Footer Widgets
 	list-style-type: none;
 	line-height: 1.2;
 	margin-bottom: 8px;
-	margin-bottom: 0.8rem;
 	word-wrap: break-word;
 }
 
 .footer-widgets .search-form input:focus {
 	border: 1px solid #ddd;
+}
+
+.footer-widgets .tribe-countdown-time {
+	font-size: 12px;
 }
 
 
@@ -3030,9 +2893,7 @@ Site Footer
 	color: #fff;
 	font-family: 'Arial',Helvetica,sans-serif;
 	font-size: 15px;
-	font-size: 1.5rem;
 	padding: 20px 0;
-	padding: 2rem 0;
 }
 
 .site-footer a {
@@ -3076,7 +2937,6 @@ Media Queries
 
 	.genesis-nav-menu a {
 		padding: 10px 20px;
-		padding: 1rem 2rem;
 	}
 
 	.bottom-sponsors div.soliloquy-container .soliloquy-prev {
@@ -3093,7 +2953,6 @@ Media Queries
 
 	div.soliloquy-container .soliloquy-caption h2 {
 		font-size: 32px;
-		font-size: 3.2rem;
 	}
 
 	input,
@@ -3104,7 +2963,6 @@ Media Queries
 
 	.genesis-nav-menu a {
 		padding: 10px 17px;
-		padding: 1rem 1.7rem;
 	}
 
 }
@@ -3128,7 +2986,6 @@ Media Queries
 
 	.title-area {
 		margin-bottom: 20px;
-		margin-bottom: 2rem;
 		width: 100%;
 	}
 
@@ -3161,7 +3018,6 @@ Media Queries
 
 	div.soliloquy-container .soliloquy-caption h2 {
 		font-size: 22px;
-		font-size: 2.2rem;
 	}
 
 	.woocommerce-page #container,
@@ -3197,19 +3053,16 @@ Media Queries
 
 	.genesis-nav-menu a {
 		padding: 6px 14px;
-		padding: 0.6rem 1.4rem;
 	}
 
 	.site-header .search-form {
 		margin: 16px auto ;
-		margin: 1.6rem auto;
 	}
 
 	.home-mid1,
 	.home-mid2 {
 		float: none;
 		margin: 0 0 20px;
-		margin: 0 0 2rem;
 		width: 100%;
 	}
 
@@ -3224,7 +3077,6 @@ Media Queries
 
 	.sidebar div.gform_wrapper .gform_footer {
 		margin: 15px 0 0;
-		margin: 1.5rem 0 0;
 		position: static;
 	}
 
@@ -3254,7 +3106,6 @@ Media Queries
 	.footer-widgets-4 {
 		float: right;
 		margin: 0 0 20px;
-		margin: 0 0 2rem;
 		width: 48%;
 	}
 
@@ -3267,7 +3118,6 @@ Media Queries
 	.footer-nav {
 		float: none;
 		margin: 0 0 10px;
-		margin: 0 0 1rem;
 		text-align: center;
 		width: 100%;
 	}
@@ -3280,7 +3130,6 @@ Media Queries
 	table.tablepress tfoot th {
 		font-family: 'Arial',Helvetica,sans-serif;
 		font-size: 14px;
-		font-size: 1.4rem;
 		line-height: 2;
 	}
 
@@ -3335,12 +3184,10 @@ Media Queries
 		border-radius: 0;
 		display: block;
 		font-size: 20px;
-		font-size: 2rem;
 		font-weight: 700;
 		margin: 0;
 		overflow: hidden;
 		padding: 10px;
-		padding: 1rem;
 		text-align: center;
 		visibility: visible;
 	}
@@ -3363,7 +3210,6 @@ Media Queries
 	button.sub-menu-toggle {
 		background-color: transparent;
 		padding: 6px 8px;
-		padding: 0.6rem 0.8rem;
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -3464,13 +3310,11 @@ Media Queries
 	.home-cta .widget-area {
 		float: none;
 		margin: 0 0 20px;
-		margin: 0 0 2rem;
 		width: 100%;
 	}
 
 	div.soliloquy-container .soliloquy-caption h2 {
 		font-size: 17px;
-		font-size: 1.7rem;
 	}
 
 }
@@ -3485,7 +3329,6 @@ Media Queries
 	body.woocommerce-page ul.products li.product {
 		float: none;
 		margin: 0 auto 20px;
-		margin: 0 auto 2rem;
 		text-align: center;
 		width: 50%;
 	}
@@ -3507,8 +3350,24 @@ Media Queries
 
 @media only screen and (max-width: 380px) {
 
+	.home-slider div.soliloquy-container {
+		max-height: none;
+	}
+
+	.soliloquy-viewport {
+		height: auto;
+	}
+
 	.home-slider div.soliloquy-container .soliloquy-caption {
-		display: none;
+		right: 0;
+		bottom: 0;
+		margin-right: 0;
+		max-width: 100%;
+		position: relative;
+	}
+
+	.home-slider div.soliloquy-container .soliloquy-caption-inside {
+		padding-bottom: 30px;
 	}
 
 	.bottom-sponsors .widget-title {

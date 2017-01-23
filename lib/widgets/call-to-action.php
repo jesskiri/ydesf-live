@@ -17,7 +17,7 @@ class WSM_CTA_Widget extends WP_Widget {
 	function WSM_CTA_Widget() {
 		$widget_ops = array( 'classname' => 'wsm-cta', 'description' => __('Displays backgrounds and customizable headline and Link', 'deborah') );
 		$control_ops = array( 'width' => 200, 'height' => 250, 'id_base' => 'wsm-cta-widget' );
-		$this->WP_Widget( 'wsm-cta-widget', __('Web Savvy - CTA Widget', 'deborah'), $widget_ops, $control_ops );
+		parent::__construct( 'wsm-cta-widget', __('Web Savvy - CTA Widget', 'deborah'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -35,6 +35,16 @@ class WSM_CTA_Widget extends WP_Widget {
 			'wsm-morelink' => '',
 			'wsm-color' => '',
 		) );
+
+		// WMPL
+		/**
+		 * Filter strings for WPML translation
+     	 */
+     	$instance['wsm-title'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-title'], 'Widgets', 'Web Savvy - CTA Widget - Title' );
+     	$instance['wsm-moretext'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-moretext'], 'Widgets', 'Web Savvy - CTA Widget - More Text' );
+     	$instance['wsm-morelink'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-morelink'], 'Widgets', 'Web Savvy - CTA Widget - Link' );
+     	$instance['wsm-color'] = apply_filters( 'wpml_translate_single_string', $instance['wsm-color'], 'Widgets', 'Web Savvy - CTA Widget - Update Color' );
+     	// WPML
 
 
 		echo $before_widget;
@@ -94,6 +104,16 @@ class WSM_CTA_Widget extends WP_Widget {
 		$new_instance['wsm-moretext'] = strip_tags( $new_instance['wsm-moretext'] );
 		$new_instance['wsm-morelink'] = strip_tags( $new_instance['wsm-morelink'] );
 		$new_instance['wsm-color'] = strip_tags( $new_instance['wsm-color'] );
+
+		// WMPL
+		/**
+		 * register strings for translation
+     	 */
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - CTA Widget - Title', $new_instance['wsm-title'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - CTA Widget - More Text', $new_instance['wsm-moretext'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - CTA Widget - Link', $new_instance['wsm-morelink'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - CTA Widget - Update Color', $new_instance['wsm-color'] );
+	 	// WPML
 
 		return $new_instance;
 	}

@@ -32,12 +32,6 @@ deborah_init();
 // Editor Styles
 add_editor_style( 'editor-style.css' );
 
-// Add Viewport meta tag for mobile browsers
-add_action( 'genesis_meta', 'deborah_add_viewport_meta_tag' );
-function deborah_add_viewport_meta_tag() {
-    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
-}
-
 // Force Stupid IE to NOT use compatibility mode
 add_filter( 'wp_headers', 'wsm_keep_ie_modern' );
 function wsm_keep_ie_modern( $headers ) {
@@ -47,11 +41,14 @@ function wsm_keep_ie_modern( $headers ) {
         return $headers;
 }
 
-// Load Moderinzr script for IE and Gravity Forms placeholders
-add_action( 'get_header', 'deborah_load_modernizr' );
-function deborah_load_modernizr() {
-    wp_enqueue_script( 'modernizr', CHILD_URL . '/lib/js/modernizr.min.js', array( 'jquery' ), '0.4.0', TRUE );
-}
+// Accessibility features.
+add_theme_support( 'genesis-accessibility', array(
+	'headings',
+	'drop-down-menu',
+	'search-form',
+	'skip-links',
+	'rems',
+) );
 
 // Add new image sizes
 add_image_size( 'Blog Thumbnail', 286, 188, TRUE );

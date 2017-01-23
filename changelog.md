@@ -1,5 +1,98 @@
 # Deborah Changelog
 
+## 1.1.9 - 02 Jan 2017
+
+* CSS fix for Gravity Forms submit button movement  
+
+### Files Modified
+* /style.css        
+
+---
+
+## 1.1.7 - 11 Mar 2016
+
+* Change Genesis Simple Sidebar related logic to be compatible with Genesis 2.2.7   
+
+### Files Modified
+* /style.css (version number only)    
+* /style-rtl.css (version number only)  
+* /lib/structure/sidebar.php        
+
+---
+
+## 1.1.6 - 11 Jan 2016
+
+* CSS fix to accomodate WordPress comment form changes   
+
+### Files Modified
+* /style.css    
+* /style-rtl.css        
+
+---
+
+## 1.1.5 - 14 Dec 2015
+
+* Add Genesis 2.2+ Accessiblity features  
+* Fix for update script in some server environments  
+* Switch to built-in Geneis mobile viewport tag   
+
+### Files Modified
+* /style.css    
+* /style-rtl.css   
+* /functions.php  
+* /languages/*  
+* /lib/init.php  
+* /lib/functions/update.php       
+
+---
+
+## 1.1.4 - 24 Aug 2015
+
+* Now fully compatible with the WPML plugin  
+* Fix for widget compatibility with WordPress 4.3  
+* Updated Soliloquy install script  
+* Added missing strings to text domain  
+* Enable Soliloquy captions on mobile devices   
+* Removed unused code and files  
+* Various minor bug fixes       
+
+### Files Modified
+* /style.css    
+* /style-rtl.css   
+* /functions.php  
+* /wpml-config.xml (new file added)  
+* /languages/*  
+* /lib/admin/deborah-theme-settings.php  
+* /lib/js/modernizr.min.js (file removed)    
+* /lib/plugins/class-tgm-plugin-activation.php  
+* /lib/plugins/plugin.php  
+* /lib/widgets/call-to-action.php  
+* /lib/widgets/wsm-featured-page.php  
+* /lib/widgets/wsm-featured-post.php  
+* /lib/widgets/wsm-sidebar-button.php      
+
+---
+
+## 1.1.3 - 17 July 2015
+
+* Fix for comment form submit button  
+* Fix Google font import with SSL  
+* Changed comment form for placeholders without script  
+* Switched to using new Gravity Forms built-in placeholder method 
+* Removed rem units from style sheet for simplicity     
+
+### Files Modified
+* /style.css    
+* /style-rtl.css   
+* /languages/*  
+* /lib/init.php  
+* /lib/functions/gforms-placeholder.php (file removed)  
+* /lib/plugins/class-tgm-plugin-activation.php  
+* /lib/plugins/plugin.php  
+* /lib/structure/comment-form.php    
+
+---
+
 ## 1.1.2 - 26 Nov 2014
 * Added strings to text domain for translation  
 * Fixed bug in text domain designation  

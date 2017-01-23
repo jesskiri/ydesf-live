@@ -1,0 +1,13 @@
+<wpml-config>
+  <admin-texts>
+    <key name="deborah-settings">
+      <key name="wsm_cityname_ptsa"/>
+      <key name="wsm_facebook_url"/>
+      <key name="wsm_twitter_url"/>
+      <key name="wsm_gplus_url"/>
+      <key name="wsm_linkedin_url"/>
+      <key name="wsm_youtube_url"/>
+      <key name="wsm_credit"/>
+    </key>
+  </admin-texts>
+</wpml-config>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Sidebar Functions
  *
@@ -19,7 +19,7 @@ if ( ( is_admin() && ptsa_is_widgets_page() ) || ( !is_admin() ) ) {
 	//unregister_sidebar( 'sidebar-alt' );
     // For themes without 3 column layouts the sidebar-alt function stays in the functions.php file to remove it everywhere.
 }
- 
+
 function ptsa_is_widgets_page() {
     return in_array( $GLOBALS['pagenow'], array( 'widgets.php', ) );
 }
@@ -45,42 +45,15 @@ function ptsa_child_sidebars_init() {
  * @return string/boolean String of sidebar key OR false if none found
  */
 function ptsa_child_has_ss_sidebar( $sidebar_key = '_ss_sidebar' ) {
-	static $taxonomies = null;
+
 	if ( is_singular() && $sidebar_key = genesis_get_custom_field( $sidebar_key ) ) {
 		return $sidebar_key;
 	}
 
-	if ( is_category() ) {
-		$term = get_term( get_query_var( 'cat' ), 'category' );
-		if ( isset( $term->meta[$sidebar_key] ) ) 
-			return $term->meta[$sidebar_key];
-	}
+	if ( is_tax() || is_category() || is_tag() ) {
 
-	if ( is_tag() ) {
-		$term = get_term( get_query_var( 'tag_id' ), 'post_tag' );
-		if ( isset( $term->meta[$sidebar_key] ) ) 
-			return $term->meta[$sidebar_key];
-	}
-
-	if ( is_tax() ) {
-		
-		if ( function_exists( 'ss_do_sidebar' ) ) {		
-		
-			if ( null === $taxonomies )
-			$taxonomies = ss_get_taxonomies();
-
-			foreach ( $taxonomies as $tax ) {
-				if ( 'post_tag' == $tax || 'category' == $tax )
-					continue;
-
-				if ( is_tax( $tax ) ) {
-					$obj = get_queried_object();
-					$term = get_term( $obj->term_id, $tax );
-					if ( isset( $term->meta[$sidebar_key] ) ) 
-						return $term->meta[$sidebar_key];
-					break;
-				}
-			}
+		if ( $sidebar_key = get_term_meta( get_queried_object()->term_id, $sidebar_key, true ) ) {
+			return $sidebar_key;
 		}
 	}
 
@@ -96,15 +69,15 @@ function ptsa_child_do_sidebar() {
 		if ( dynamic_sidebar( $id ) ) { /* do nothing */ }
 	}
 	else {
-		
+
 		if( is_archive() || is_single() || is_category() || is_page_template( 'page_blog.php' ) ) {
 			genesis_widget_area( 'blog-sidebar');
 		}
-		
+
 		elseif ( is_home() ) {
 			genesis_widget_area( 'home-sidebar');
 		}
-		
+
 		else genesis_widget_area( 'page-sidebar');
 	}
 }

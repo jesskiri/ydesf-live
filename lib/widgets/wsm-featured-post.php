@@ -90,6 +90,17 @@ class WSM_Featured_Post extends WP_Widget {
 		//* Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 
+		// WMPL
+		/**
+		 * Filter strings for WPML translation
+     	 */
+     	$instance['title'] = apply_filters( 'wpml_translate_single_string', $instance['title'], 'Widgets', 'Web Savvy - Featured Posts - Widget Title' );
+     	$instance['post_info'] = apply_filters( 'wpml_translate_single_string', $instance['post_info'], 'Widgets', 'Web Savvy - Featured Posts - Post Info' );
+     	$instance['more_text'] = apply_filters( 'wpml_translate_single_string', $instance['more_text'], 'Widgets', 'Web Savvy - Featured Posts - More Text' );
+     	$instance['extra_title'] = apply_filters( 'wpml_translate_single_string', $instance['extra_title'], 'Widgets', 'Web Savvy - Featured Posts - Extra Title' );
+     	$instance['more_from_category_text'] = apply_filters( 'wpml_translate_single_string', $instance['more_from_category_text'], 'Widgets', 'Web Savvy - Featured Posts - Category Link Text' );
+     	// WPML
+
 		echo $before_widget;
 
 		//* Set up the author bio
@@ -251,6 +262,18 @@ class WSM_Featured_Post extends WP_Widget {
 		$new_instance['title']     = strip_tags( $new_instance['title'] );
 		$new_instance['more_text'] = strip_tags( $new_instance['more_text'] );
 		$new_instance['post_info'] = wp_kses_post( $new_instance['post_info'] );
+
+		//WMPL
+		/**
+		 * register strings for translation
+     	 */
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Post - Widget Title', $new_instance['title'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Post - Post Info', $new_instance['post_info'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Post - More Text', $new_instance['more_text'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Post - Extra Title', $new_instance['extra_title'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Post - Category Link Text', $new_instance['more_from_category_text'] );
+	 	//WMPL
+
 		return $new_instance;
 
 	}

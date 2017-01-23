@@ -62,7 +62,6 @@ class Deborah_Settings extends Genesis_Admin_Boxes {
 			'wsm_youtube_url' => 'http://www.youtube.com/',
 			'wsm_credit' => 'Deborah is a WordPress Theme by <strong>Web Savvy Marketing</strong>',
 			'wsm_ignore_updates' => 0,
-			'wsm_gforms_placeholder' => 0,
 		);
 
 		// Create the Admin Page
@@ -124,7 +123,6 @@ class Deborah_Settings extends Genesis_Admin_Boxes {
 		add_meta_box('wsm_ptsa_logo_metabox', __( 'PTSA Logo', 'deborah' ), array( $this, 'wsm_ptsa_logo_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_social_profiles_metabox', __( 'Social Profiles', 'deborah' ), array( $this, 'wsm_social_profiles_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_footer_info_metabox', __( 'Footer Info', 'deborah' ), array( $this, 'wsm_footer_info_metabox' ), $this->pagehook, 'main', 'high');
-		add_meta_box('wsm_gforms_placeholders_metabox', __( 'Gravity Forms Auto Placeholders', 'deborah' ), array( $this, 'wsm_gforms_placeholders_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_upate_notifications_metabox', __( 'Update Notifications', 'deborah' ), array( $this, 'wsm_upate_notifications_metabox' ), $this->pagehook, 'main', 'high');
 
 	}
@@ -186,20 +184,6 @@ class Deborah_Settings extends Genesis_Admin_Boxes {
 		echo '<p><strong>' . __( 'Credit Info:', 'deborah' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_credit' ) . '" id="' . $this->get_field_id( 'wsm_credit' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_credit' ) ) . '" size="70" /></p>';
 	}
-
-	/**
-	* Gravity Forms Auto Placeholders Metabox
-    * @since 2.0.0
-    */
-    function wsm_gforms_placeholders_metabox() {
-
-        echo '<input type="checkbox" name="' . $this->get_field_name( 'wsm_gforms_placeholder' ) . '" id="' . $this->get_field_id( 'wsm_gforms_placeholder' ) . '" value="1"';
-        checked( 1, $this->get_field_value( 'wsm_gforms_placeholder' ) ); echo '/>';
-
-        echo '<label for="' . $this->get_field_id( 'wsm_gforms_placeholder' ) . '">' . __( 'Only convert labels to placeholders on forms or form items with the class <strong><em>gforms-placeholder</em></strong>', 'deborah' ) . '</label>';
-        echo '<p><em>' . __( 'By default, leaving this unchecked will apply the effect to all Gravity Form fields.', 'deborah' ) . '</em></p>';
-
-    }
 
 	/**
 	 * Update Notifications Metabox

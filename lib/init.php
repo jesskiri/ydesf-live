@@ -27,7 +27,7 @@ function deborah_init() {
 
 	// Developer Information (do not remove)
 	define( 'CHILD_DEVELOPER', 'Web Savvy Marketing' );
-	define( 'CHILD_DEVELOPER_URL', 'http://www.web-savvy-marketing.com/'  );
+	define( 'CHILD_DEVELOPER_URL', 'https://www.web-savvy-marketing.com/'  );
 
 	/** Define Directory Location Constants */
 	if ( ! defined( 'CHILD_DIR' ) )
@@ -61,6 +61,9 @@ function deborah_init() {
 	// Add HTML5 markup structure
 	add_theme_support( 'html5' );
 
+	// Add Viewport meta tag for mobile browsers
+	add_theme_support( 'genesis-responsive-viewport' );
+
 	//Structure
 	include_once( CHILD_DIR . '/lib/structure/header.php');
 	include_once( CHILD_DIR . '/lib/structure/sidebar.php');
@@ -79,8 +82,8 @@ function deborah_init() {
 	// Mobile menu
 	include_once( CHILD_DIR . '/lib/functions/mobilemenu.php');
 
-	// Gravity Forms Placeholders
-	include_once( CHILD_DIR . '/lib/functions/gforms-placeholder.php');
+	// Enable Gravity Forms setting to hide form labels
+	add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 
 	// Remove Edit link
 	add_filter( 'edit_post_link', '__return_false' );

@@ -72,6 +72,15 @@ class Web_Savvy_Featured_Page extends WP_Widget {
 		//* Merge with defaults
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 
+		// WMPL
+		/**
+		 * Filter strings for WPML translation
+     	 */
+     	$instance['title'] = apply_filters( 'wpml_translate_single_string', $instance['title'], 'Widgets', 'Web Savvy - Featured Page - Title' );
+     	$instance['more_text'] = apply_filters( 'wpml_translate_single_string', $instance['more_text'], 'Widgets', 'Web Savvy - Featured Page - More Text' );
+     	$instance['custom_text'] = apply_filters( 'wpml_translate_single_string', $instance['custom_text'], 'Widgets', 'Web Savvy - Featured Page - Custom Text' );
+     	// WPML
+
 		echo $before_widget;
 
 		//* Set up the author bio
@@ -175,6 +184,16 @@ class Web_Savvy_Featured_Page extends WP_Widget {
 		$new_instance['more_text'] = strip_tags( $new_instance['more_text'] );
 		$new_instance['custom_text'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['custom_text']) ) ); // wp_filter_post_kses() expects slashed
 		$new_instance['filter'] = isset($new_instance['filter']);
+
+		// WMPL
+		/**
+		 * register strings for translation
+     	 */
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Page - Title', $new_instance['title'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Page - More Text', $new_instance['more_text'] );
+	 	do_action( 'wpml_register_single_string', 'Widgets', 'Web Savvy - Featured Page - Custom Text', $new_instance['custom_text'] );
+	 	// WPML
+
 		return $new_instance;
 
 	}
